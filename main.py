@@ -19,5 +19,11 @@ def handle_chat(request:ChatRequest):
         raise HTTPException(status_code=500, detail=str(e))
 
 
+@app.post("/upload")
+def upload_file():
+    return {"status":"not implemented yet."}
 
+@app.post("/ask")
+def ask_question():
+    return {"status":"not implemented yet."}
 
